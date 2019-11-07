@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startGame2"
+        android:layout_width="133dp"
+        android:layout_height="79dp"
+        android:text="START"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="291dp"
+        android:layout_height="78dp"
+        android:text="HOW TO PLAY"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="339dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hands Free Go Fish!"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:onClick="getSpeechInput"
+        app:srcCompat="@android:drawable/ic_btn_speak_now"
+        tools:layout_editor_absoluteX="592dp"
+        tools:layout_editor_absoluteY="272dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
